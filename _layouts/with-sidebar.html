@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<h1 id="title">{{ page.title }}</h1>
+
+<div class="row with-sidebar">
+  <div class="col-md-3 hidden-phone">
+    <div class="well sidebar-nav">
+      <ul class="nav nav-list">
+        {% include sidebar.html type=page.sidebar %}
+      </ul>
+    </div><!--/.well -->
+  </div><!--/span-->
+  <div class="col-md-9">
+    {{ content }}
+
+    <div class="related-pages"></div>
+  </div><!--/span-->
+</div><!--/row-->
+
